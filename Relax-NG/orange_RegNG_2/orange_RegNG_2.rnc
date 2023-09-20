@@ -1,0 +1,28 @@
+start = element root { metadata, poem, source }
+metadata = element metadata { title, author, date }
+poem = element poem { stanza+ }
+stanza = element stanza { attribute n { xsd:string }, stanzanum, line+ }
+source = element source { (text | date* | author*)+ }
+lineGroup = element lineGroup { line+ }
+line = element line { (text | human* | nature* | EXP*)+ }
+author = element author { text }
+date = element date { year }
+stanzanum = element stanzanum { text }
+year = element year { text }
+human = element human { text }
+nature = element nature { text }
+EXP = element EXP { text }
+title = element title { text }
+
+
+
+
+
+
+
+
+
+
+
+
+
