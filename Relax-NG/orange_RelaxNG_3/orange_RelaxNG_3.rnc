@@ -1,0 +1,12 @@
+start = root
+root = element root {metadata, recipe}
+metadata = element metadata {title, author, text}
+title = element title {text}
+author = element author {text}
+recipe = element recipe {ingredients, directions}
+ingredients = element ingredients {item*}
+item = element item {text}
+directions = element directions {step+}
+step = element step {number, instruction}*
+number = element number {text}
+instruction = element instruction {text}
