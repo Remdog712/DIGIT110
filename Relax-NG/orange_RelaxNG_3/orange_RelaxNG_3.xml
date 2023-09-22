@@ -2,7 +2,7 @@
 <?xml-model href="orange_RelaxNG_3.rnc" type="application/relax-ng-compact-syntax"?>
 <root>
     <metadata>
-    <title>Simple Cake Recipe</title>
+    <title>Simple Cake Recipe</title> by
     <author>Larry Madrigal</author>
     </metadata>
     
@@ -23,17 +23,18 @@
     
     <directions>
         <step>
-            <number>1</number>
+            <number when="1">1</number>
             <instruction>Preheat oven to 350 degrees F. Grease and flour two 9-inch round baking pans.</instruction>
         </step>
         <step>
-            <number>2</number>
+            <number when="2">2</number>
             <instruction>In a large bowl, combine the sugar, flour, cocoa, baking powder, baking soda, and salt. Add eggs, milk, oil, and vanilla. Mix until smooth. Stir in boiling water (batter will be thin). Pour batter into prepared pans.</instruction>
         </step>
         <step>
-            <number>3</number>
+            <number when="3">3</number>
             <instruction>Bake 30 to 35 minutes or until a toothpick inserted in the center comes out clean. Cool completely.</instruction>
         </step>
     </directions>
     </recipe>
+    <source>https://github.com/LarryMad/recipes/blob/master/cake-recipe.txt</source>
 </root>
