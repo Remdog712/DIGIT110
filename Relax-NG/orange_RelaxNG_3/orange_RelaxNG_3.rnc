@@ -1,18 +1,16 @@
 start = root
-root = element root {metadata, recipe}
+root = element root {metadata, recipe, source}
 metadata = element metadata {mixed{title , author+}}
 title = element title {text}
 author = element author {text}
 recipe = element recipe {ingredients, directions}
 ingredients = element ingredients {item+}
-item = element item {text}
+item = element item {(attribute xsd_float { xsd:float }, text)}
+xsd = attribute xsd_float {xsd:float}
 directions = element directions {step+}
 step = element step {number, instruction}*
 number = element number {when,text}
 when = attribute when {xsd:integer}
 instruction = element instruction {text}
-
-
-Add a URL data type
-
-Add an ID data type for measurements xsd:float for decimals
+type = attribute type {xsd:anyURI}
+source = element source {type,text}

@@ -8,17 +8,18 @@
     
     <recipe>
         <ingredients>
-        <item>2 cups sugar</item>
-        <item>1 3/4 cups all-purpose flour</item>
-        <item>3/4 cup cocoa</item>
-        <item>1 1/2 teaspoons baking powder</item>
-        <item>1 1/2 teaspoons baking soda</item>
-        <item>1 teaspoon salt</item>
-        <item>2 eggs</item>
-        <item>1 cup milk</item>
-        <item>1/2 cup vegetable oil</item>
-        <item>2 teaspoons vanilla extract</item>
-        <item>1 cup boiling water</item>
+            <item xsd_float="2.0">2 cups sugar</item>
+            <item xsd_float="1.75">1 3/4 cups all-purpose flour</item>
+            <item xsd_float="0.75">3/4 cup cocoa</item>
+            <item xsd_float="1.5">1 1/2 teaspoons baking powder</item>
+            <item xsd_float="1.5">1 1/2 teaspoons baking soda</item>
+            <item xsd_float="1.0">1 teaspoon salt</item>
+            <item xsd_float="2.0">2 eggs</item>
+            <item xsd_float="1.0">1 cup milk</item>
+            <item xsd_float="0.5">1/2 cup vegetable oil</item>
+            <item xsd_float="2.0">2 teaspoons vanilla extract</item>
+            <item xsd_float="1.0">1 cup boiling water</item>
+            
     </ingredients>
     
     <directions>
@@ -36,5 +37,5 @@
         </step>
     </directions>
     </recipe>
-    <source>https://github.com/LarryMad/recipes/blob/master/cake-recipe.txt</source>
+    <source type="xsd:anyURI">https://github.com/LarryMad/recipes/blob/master/cake-recipe.txt</source>
 </root>
