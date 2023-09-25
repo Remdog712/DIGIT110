@@ -1,0 +1,45 @@
+
+start = xml
+xml = element xml {metadata, recipe}
+metadata = element metadata {title, author, editor, source, time, yield} #(5)missing "yield" element
+yield = element yield {text}
+title = element title {text} #(1) text not txt
+author = element author {attribute id {xsd:ID}, text} #(6) Mssing attribute
+editor = element editor {attribute id {xsd:ID}, text} #(7) Mssing attribute
+source = element source {attribute url { xsd:anyURI },text} #(3) Atrtribute Needed
+time = element time {dur, text}
+id = attribute is {xsd:ID}
+url = attribute url {xsd:anyURI}
+dur = attribute dur {xsd:duration}
+
+recipe = element recipe {ingList, prep}
+ingList = element ingList {heading, ing+}
+heading = element heading {text}
+ing = element ing {attribute id {xsd:ID},meas?,unit?, mixed {alt*}}  # (4) Missing ID Attribute
+alt = element alt {meas, unit, text}
+meas = attribute meas {xsd:float}
+unit = attribute unit {"cup" | "T" | "t"  | "F" | "C" | "inch" | "pint"} #(8) Added Pint unit
+prep = element prep {heading, step*} #(14) changed ? to *
+step = element step {n,mixed{(combine | equip | equipUse | ingUse)*}}
+equip = element equip {attribute id {xsd:ID}, mixed{(equip | equipUse | setting | time | temp |  size)*}} #(2) Missing Setting ; (10) added attribute ; (11) Added "temp" to or pipe ; #(13) added size
+setting = element setting {text}
+temp = element temp {meas, unit, text}
+size = element size {depth, unit, text}
+depth = attribute depth {xsd:float}
+equipUse = element equipUse {ref, mixed{(temp | size | equip | equipUse | ingUse | setting | time)*}}
+ingUse = element ingUse {mixed{(ref | meas | unit)*}}#(12) Had to include ref, meas, unit
+ref = attribute ref {xsd:IDREFS}
+combine = element combine {mixed{(ref | ingUse)*}} #(15) Added Inguse into combine
+n = attribute n {xsd:integer} #(9) xsd:integer not xsd:date
+
+
+#Submission Commet: rorange: Fairly confident I did not do things intended. Started off strong but then about half way through things crumbled. Did eventually did get it to green but not until way after 13 corrections
+
+
+
+
+
+
+
+
+
