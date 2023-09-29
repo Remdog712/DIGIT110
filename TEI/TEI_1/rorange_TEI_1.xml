@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Mary Behrend Calendar Pages</title>
+            <author>Mary Behrend</author>
+            <editor>Remington Orange</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Dr. B</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Source: https://newtfire.org/courses/tutorials/TEI-Behrend-Exercise1.html</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div type="group">
+            <!-- First Calendar Image -->
+            <div type="calendarPage">
+               <head>Calendar Page 1</head>
+               <note type="copyright">COPYRIGHT 1908, BY FRIENDSHIP CALENDAR CO. NEW BRITAIN, CONN.</note>
+               <note type="date">1909-02-16</note>
+               <figure>
+                  <graphic url="https://newtfire.org/courses/tutorials/TEI-images/mary-behrend-calendar-1909/IMG_2042.jpg" />
+               </figure>
+               <note type="handwritten">Mr. Behrend (unknown) (unknown) bug </note>
+               <note type="handwritten" rend="color(red)">(unkown)</note>
+            </div>
+            
+            <!-- Second Calendar Image -->
+               <div type="calendarPage">
+                  <head>Calendar Page 2</head>
+                  <note type="copyright">COPYRIGHT 1908, BY FRIENDSHIP CALENDAR CO. NEW BRITAIN, CONN.</note>
+                  <note type="date">1909-03-08</note>
+                  <figure>
+                     <graphic url="https://newtfire.org/courses/tutorials/TEI-images/mary-behrend-calendar-1909/IMG_2048.jpg" />
+                  </figure>
+                  <note type="handwritten" rend="color(red)">(unkown)</note>
+               </div>
+         </div>
+      </body>
+   </text>
+</TEI>
+
+<!-- rorange: I feel like it would take a lifetime to understand all of this -->
