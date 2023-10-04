@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Mary Behrend Calendar Pages</title>
+            <author>Mary Behrend</author>
+            <editor>Remington Orange</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Dr. B</publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Source: https://newtfire.org/courses/tutorials/TEI-Behrend-Exercise1.html</p>
+         </sourceDesc>
+      </fileDesc>
+     
+     
+     
+      <profileDesc>
+         <handNotes>
+            <handNote xml:id="Calendar_Page_1" script="cursive"
+               medium="black-ink-and-red-ink">Written directly below image</handNote>  <!-- rorange TEI 3 - Added this but not sure it's useful since it's covered later in the XML -->
+            <handNote xml:id="Calendar_Page_2" script="cursive"
+               medium="red-ink">written bottom right of image</handNote>
+         </handNotes>   
+      </profileDesc>
+  
+      
+      
+   </teiHeader>
+   <text>
+      <body>
+         <div type="group">
+            <!-- First Calendar Image -->
+            <div type="calendarPage">
+               <head>Calendar Page 1</head>
+               <note type="copyright">COPYRIGHT 1908, BY FRIENDSHIP CALENDAR CO. NEW BRITAIN, CONN.</note>
+               <note type="date">1909-02-16</note>
+               <figure>
+                  <graphic url="https://newtfire.org/courses/tutorials/TEI-images/mary-behrend-calendar-1909/IMG_2042.jpg" />
+                  <figDesc>A man presumably Mr. Behrend holding a bug-like create in his right handed over his head standing next to a tree which appears on the right side </figDesc><!-- rorange TEI 3 - Included for more description -->
+               </figure>
+               <p> <note type="handwritten"><persName ref="Behrend" xml:id="MrBehrend">Mr. Behrend</persName> <unclear reason="illegible"> words </unclear> bug </note></p> 
+               <p> <note type="handwritten" rend="color(red)"> <unclear reason="illegible"> entire sentence </unclear> </note></p> 
+            </div>
+            
+            <!-- Second Calendar Image -->
+               <div type="calendarPage">
+                  <head>Calendar Page 2</head>
+                  <note type="copyright">COPYRIGHT 1908, BY FRIENDSHIP CALENDAR CO. NEW BRITAIN, CONN.</note>
+                  <note type="date">1909-03-08</note>
+                  <figure>
+                     <graphic url="https://newtfire.org/courses/tutorials/TEI-images/mary-behrend-calendar-1909/IMG_2048.jpg" />
+                     <figDesc>A large red question mark filling most the page </figDesc> <!-- rorange TEI 3 - Included for more description -->
+                  </figure>
+                  <p> <note type="handwritten" rend="color(red)"> <unclear reason="illegible"> entire sentence </unclear> </note></p> 
+               </div>
+         </div>
+      </body>
+   </text>
+</TEI>
+
