@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+<metadata>
+    <project>
+        <projectMembers></projectMembers>
+    </project>
+    
+    <source>
+        <sourceName></sourceName>
+        <url></url>
+    </source>
+    
+    <documentName></documentName>
+    
+    <dates>
+        <datePub></datePub>
+        <dateEncode></dateEncode>
+    </dates>
+    
+    <originalAuthor></originalAuthor>
+    
+    <docDesc>
+       <docName></docName>
+       <docCondition></docCondition>
+    </docDesc>
+    
+</metadata>
+
+<document>
+    <header></header>
+    <body>
+        <graphic></graphic>
+    </body>
+    <p></p>
+    <footer></footer>
+    <rightMargin></rightMargin>
+    <leftmargin></leftmargin>
+</document>
+    
+    <postMetaDate></postMetaDate>
+    
+</root>
+
