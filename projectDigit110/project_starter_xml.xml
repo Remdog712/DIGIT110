@@ -2,42 +2,54 @@
 <root>
 <metadata>
     <project>
-        <projectMembers></projectMembers>
+        <projectName>Encoding ____ Files Project</projectName>
+        <projectMember name="Lyndon H">Lyndon</projectMember>
+        <projectMember name="Tommy M">Tommy</projectMember>
+        <projectMember name="Remington O">Remington</projectMember>
+        <projectMember name="Connor L">Connor</projectMember>
     </project>
     
     <source>
-        <sourceName></sourceName>
-        <url></url>
+        <sourceName>Website Name</sourceName>
+        <url>https://www.website.com</url>
     </source>
     
-    <documentName></documentName>
+    <documentName>Name of Document</documentName>
     
     <dates>
-        <datePub></datePub>
-        <dateEncode></dateEncode>
+        <datePub date="ISO">MonthName DD, YYYY</datePub>
+        <dateEncode date="ISO">MonthName DD, YYYY</dateEncode>
     </dates>
     
-    <originalAuthor></originalAuthor>
+    <originalAuthor name="AuthorFullName">Name</originalAuthor>
     
     <docDesc>
-       <docName></docName>
-       <docCondition></docCondition>
+       <docName>Custom Name for Document</docName>
+       <docCondition> Description of Document Condition (can add more descriptors</docCondition>
     </docDesc>
     
 </metadata>
 
 <document>
-    <header></header>
+    
+    <header>Words</header>
+    
     <body>
-        <graphic></graphic>
+        <graphic>Graphic URL</graphic>
+        <graphicDesc>Words about document</graphicDesc>
+    <p n="1">Words</p>
+    <p n="2">Words</p>
     </body>
-    <p></p>
-    <footer></footer>
-    <rightMargin></rightMargin>
-    <leftmargin></leftmargin>
+    
+    <footer>Words</footer>
+    
+    <rightMargin>Words</rightMargin>
+    
+    <leftmargin>Words</leftmargin>
+    
 </document>
     
-    <postMetaDate></postMetaDate>
+    <postMetaData></postMetaData>
     
 </root>
 
