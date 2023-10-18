@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+<metadata>
+    <project>
+        <projectName>Encoding ____ Files Project</projectName>
+        <projectMember name="Lyndon H">Lyndon</projectMember>
+        <projectMember name="Tommy M">Tommy</projectMember>
+        <projectMember name="Remington O">Remington</projectMember>
+        <projectMember name="Connor L">Connor</projectMember>
+    </project>
+    
+    <source>
+        <sourceName>Website Name</sourceName>
+        <url>https://www.website.com</url>
+    </source>
+    
+    <documentName>Name of Document</documentName>
+    
+    <dates>
+        <datePub date="ISO">MonthName DD, YYYY</datePub>
+        <dateEncode date="ISO">MonthName DD, YYYY</dateEncode>
+    </dates>
+    
+    <originalAuthor name="AuthorFullName">Name</originalAuthor>
+    
+    <docDesc>
+       <docName>Custom Name for Document</docName>
+       <docCondition> Description of Document Condition (can add more descriptors</docCondition>
+    </docDesc>
+    
+</metadata>
+
+<document>
+    
+    <header>Words</header>
+    
+    <body>
+        <graphic>Graphic URL</graphic>
+        <graphicDesc>Words about document</graphicDesc>
+    <p n="1">Words</p>
+    <p n="2">Words</p>
+    </body>
+    
+    <footer>Words</footer>
+    
+    <rightMargin>Words</rightMargin>
+    
+    <leftmargin>Words</leftmargin>
+    
+</document>
+    
+    <postMetaData></postMetaData>
+    
+</root>
+
