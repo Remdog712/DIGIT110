@@ -14,7 +14,7 @@ b.) `min(//div/*/count(*))
 
 ## Section 3
 a.) This awkwardly long expression `//div[*[count(*) = max(//div/*/count(*))]]
-` gives you `type="historical_people` returned as the list that matches the max found though I'm not sure if this is even the correct way to do it but I got a result
+` gives you `type="historical_people` returned as the list that matches the max found though I'm not sure if this is even the correct way to do it but I got a result. This took a lot of Googling
 
 ## Section 4
 a.) `distinct-values(//occupation/@type)
@@ -24,21 +24,22 @@ b.)`count(distinct-values(//occupation/@type))
 ` will give you 15 results
 
 ## Section 5
-a.)
+a.) `//occupation[@type='artist']`
 
-b.)
+b.) `//person[occupation[@type='artist']]`
 
-c.)
+c.) `//person[@sex='f' and occupation[@type='artist']]` 
 
-d.)
+d.) `//person[occupation[@subtype='engraver']] ` There are 18 engravers
 
-e.)
+e.) Using `//person[occupation[@subtype='engraver'] and birth/@when='1787']` We get "William Finden" for an engraver born in 1787 
 
-f.)
+f.) `//person[occupation[@subtype='engraver']]/birth/@when` returns the birthdates of 17 engravers
 
-g.)
+g.) This took a while to figure out but: `let $birthDates := //person[occupation[@subtype='engraver']]/birth/@when ! string(.)
+return min(sort($birthDates))` will give you January 12th 1667 for the earliest year
 
 ## Section 6
-a.)
+a.) `//*[name()]` Gives you a crazy number of 40,784
 
-b.)
+b.) Even with distinct values: `count(distinct-values(//*[name()]))` Gives you 20,798 names.
