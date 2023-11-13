@@ -1,0 +1,115 @@
+/* Table styles */
+table {
+    background-color: lightgrey; 
+    color: white; 
+    width: 100%; 
+    border-collapse: collapse; 
+}
+
+
+th {
+    text-align: left; 
+    padding: 5px; 
+    border: 1px solid white; 
+}
+
+
+td {
+    text-align: left; 
+    padding: 5px; 
+    border: 1px solid white; 
+}
+
+
+tr.page-row {
+    background-color: blue; 
+}
+
+tr.panel-row {
+    background-color: lightblue; 
+}
+
+
+body, h1, p {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+
+h1 {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+
+
+body, h1, p {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+/* Apply styles to the header */
+h1 {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Apply styles to the reading view */
+#reading-view {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+}
+
+/* Apply styles to the pages */
+.page {
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+/* Apply styles to paragraphs */
+p {
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+/* Apply styles to panel elements */
+.panel {
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+/* Apply styles to captions */
+.cbml-caption {
+    font-style: italic;
+}
+
+/* Apply styles to balloons */
+.balloon {
+    background-color: #ffcc00;
+    padding: 5px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+ 
