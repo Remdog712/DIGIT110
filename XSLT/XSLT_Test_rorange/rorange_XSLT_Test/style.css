@@ -1,0 +1,76 @@
+
+/*All of my pretty CSS. Tried to make it look more spooky*/
+
+body {
+    font-family: 'Garamond', 'Georgia', serif;
+    margin: 20px;
+    background-color: #111;
+    color: #ddd;
+}
+
+h1#top {
+    text-align: center;
+    font-size: 36px;
+    color: #e74c3c;
+    text-shadow: 2px 2px 4px #000;
+}
+
+#contents {
+    margin-top: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #222;
+    color: #ddd;
+}
+
+table, th, td {
+    border: 1px solid #333;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #333;
+    color: #e74c3c;
+}
+
+#readingView {
+    margin-top: 20px;
+}
+
+h2 {
+    font-size: 28px;
+    margin-top: 30px;
+    color: #e74c3c;
+    text-shadow: 2px 2px 4px #000;
+}
+
+span.location {
+    background-color: #d35400;
+    padding: 2px;
+    border-radius: 2px;
+}
+
+span.tech {
+    background-color: #2980b9;
+    padding: 2px;
+    border-radius: 2px;
+}
+
+span.date {
+    background-color: #27ae60;
+    padding: 2px;
+    border-radius: 2px;
+}
+
+span.time {
+    background-color: #c0392b;
+    padding: 2px;
+    border-radius: 2px;
+}
